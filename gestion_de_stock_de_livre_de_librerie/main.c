@@ -96,8 +96,12 @@ void supp_livre()
            for(int j = 0; j < count - 1; j++)
            {
                strcpy(titre_livre[j], titre_livre[j + 1]);
+               strcpy(auteur_livre[j], auteur_livre[j + 1]);
+               prix_livre[j] = prix_livre[j + 1];
+               quantite_livre[j] = quantite_livre[j + 1];
            }
            count--;
+              printf("Livre supprime avec succes !\n");
         }
     }
 }
